@@ -1,0 +1,19 @@
+service: your-service-name
+
+plugins:
+  - serverless-plugin-typescript
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: us-east-1
+  # profile: your-aws-profile -- this is stored in ~/.aws/config
+
+functions:
+  articles:
+    handler: handler.myAction
+    events:
+      - http:
+          path: myAction
+          method: get

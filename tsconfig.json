@@ -1,0 +1,19 @@
+{
+  "compileOnSave": true,
+  "exclude": [
+    "tests",
+    "debug.ts"
+  ],
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "target": "es5",
+    "outDir": ".build",
+    "rootDir": "./",
+    "lib": ["es2015"],
+    "moduleResolution": "node",
+    "types": [
+      "node"
+    ]
+  }
+}
